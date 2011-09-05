@@ -1,3 +1,4 @@
-- products.each do |product|
-  = "You should buy #{product}!"
+- products.keys.sort.each do |product_name|
+  = "#{product_name} is available for #{products[product_name]}"
   <br/>
+
