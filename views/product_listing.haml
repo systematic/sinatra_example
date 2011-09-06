@@ -1,7 +1,10 @@
 <h1>Unique Stuff</h1>
 
-
 - products_to_list.keys.sort.each do |product_name|
+  <form name="add_to_cart" action="/cart" method="post">
   = "#{product_name} is available for #{products_to_list[product_name]}"
+  = "<input type=hidden name='product' value='#{product_name}' />"
+  <input type="submit" value="Add To Cart" />
+  </form>
   <br/>
 
